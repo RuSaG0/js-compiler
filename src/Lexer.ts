@@ -30,8 +30,6 @@ export default class Lexer {
             const result = this.code.substr(this.pos).match(regex);
             if(result && result[0]) {
                 const token = new Token(tokenType, result[0], this.pos);
-                console.log(token)
-                console.log('=====')
                 this.pos += result[0].length;
                 this.tokenList.push(token);
                 return true;
