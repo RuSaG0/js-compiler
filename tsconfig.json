@@ -11,9 +11,5 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "baseUrl": ".", // Here... try with correct values and the issue should get fixed
-    "paths": {
-      "*": ["src/*"] // Here... try with correct values and the issue should get fixed
-    }
   },
 }
