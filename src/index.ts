@@ -3,8 +3,8 @@ import Parser from "./Parser";
 
 const code =
     `
-    x = 5 - 9;
-    y = 0 - 6;
+    x = 9;
+    y = 18 / 6;
     LOG x;
     LOG y;
     LOG x - y + 5;
