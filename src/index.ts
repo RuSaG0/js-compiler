@@ -3,15 +3,16 @@ import Parser from "./Parser";
 
 const code =
     `
-    сумма = 5 - 9;
-    суммадва = 0 - 6;
-    КОНСОЛЬ сумма;
-    КОНСОЛЬ суммадва;
-    КОНСОЛЬ сумма - суммадва + 5;
+    x = 5 - 9;
+    y = 0 - 6;
+    LOG x;
+    LOG y;
+    LOG x - y + 5;
     `
 
 const lexer = new Lexer(code);
 lexer.lexAnalysis();
+
 
 const parser = new Parser(lexer.tokenList);
 

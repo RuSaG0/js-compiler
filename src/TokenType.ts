@@ -11,11 +11,11 @@ export default class TokenType {
 
 export const tokenTypesList = {
     'NUMBER': new TokenType('NUMBER', '[0-9]*'),
-    'VARIABLE': new TokenType('VARIABLE', '[а-я]*'),
+    'VARIABLE': new TokenType('VARIABLE', '[a-z]*'),
     'SEMICOLON': new TokenType('SEMICOLON', ';'),
     'SPACE': new TokenType('SPACE', '[ \\n\\t\\r]'),
     'ASSIGN': new TokenType('ASSIGN', '\\='),
-    'LOG': new TokenType('LOG', 'КОНСОЛЬ'),
+    'LOG': new TokenType('LOG', 'LOG'),
     'PLUS': new TokenType('PLUS', '\\+'),
     'MINUS': new TokenType('MINUS', '\\-'),
     'LPAR': new TokenType('LPAR', '\\('),
