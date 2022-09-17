@@ -99,7 +99,7 @@ export default class Parser {
 
     parseCode(): ExpressionNode {
         const root = new StatementsNode();
-        while(this.pos < this.tokens.length) {
+        while (this.pos < this.tokens.length) {
             const codeStringNode = this.parseExpression();
             this.require(tokenTypesList.SEMICOLON);
             root.addNode(codeStringNode)

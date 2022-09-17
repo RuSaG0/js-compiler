@@ -16,7 +16,6 @@ export default class Lexer {
         while (this.nextToken()) {}
         this.tokenList = this.tokenList.filter(token => token.type.name !== tokenTypesList.SPACE.name);
         return this.tokenList.filter(token => token.type.name !== tokenTypesList.SPACE.name);
-        return this.tokenList;
     }
 
     nextToken(): boolean {
